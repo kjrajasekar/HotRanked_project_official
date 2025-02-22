@@ -31,7 +31,6 @@ html {
     --font-size-lg: 1.5rem;
     --font-size-sm: 0.875rem;
     --font-rob: "Roboto", serif;
-
 }
 
 body {
@@ -41,10 +40,6 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     overflow-x: hidden;
-}
-
-.sub-text-gray {
-    color: #4c4c4c;
 }
 
 p {
@@ -70,6 +65,10 @@ ul li {
 
 .bg-darkBlue {
     background-color: #011E4F;
+}
+
+.sub-text-gray {
+    color: #4c4c4c;
 }
 
 .text-darkBlue {
@@ -421,12 +420,6 @@ body {
     right: 0;
 }
 
-
-/* .category .owl-theme .owl-nav {
-    position: absolute;
-    top: 0%;
-    right: -25px;
-} */
 .card-text-font {
     font-size: 10px;
     line-height: 12px;
@@ -461,12 +454,6 @@ body {
 
 .owl-next {
     right: -30px;
-}
-
-.toplist .owl-theme .owl-nav {
-    position: absolute;
-    top: -40%;
-    right: -36px;
 }
 
 .icon-color {
@@ -520,12 +507,6 @@ body {
     transform: translateY(-10px);
 }
 
-/* .country .owl-theme .owl-nav {
-    position: absolute;
-    top: -60px;
-    right: -20px;
-} */
-
 .content {
     max-width: 1440px !important;
 }
@@ -537,10 +518,6 @@ body {
     border: 1px solid #0395FFBF;
     box-shadow: 0px 0px 7px 3px #D2E0EBBF;
 }
-
-/* .cat-card-img {
-    margin: 5px 5px;
-} */
 
 
 .cat-card-img {
@@ -683,10 +660,6 @@ body {
     top: 0 !important
 }
 
-.country-content {
-    top: 0;
-}
-
 .country-img {
     position: relative;
     padding: 8px;
@@ -724,7 +697,6 @@ body {
 }
 
 .category .view-category-div,
-
 .trend .view-category-div {
     top: 10px;
     right: -28px;
@@ -738,8 +710,6 @@ body {
     overflow: visible;
     overflow-x: clip;
 }
-
-
 
 /* details card  */
 .details .dot-icon img {
@@ -768,7 +738,6 @@ body {
     background-color: #023BE0 !important;
     color: #ffffff;
 }
-
 
 .details .card-custom {
     border-radius: 15px;
@@ -860,15 +829,9 @@ body {
     margin-left: 10px;
 }
 
-.details .banner img {
-    max-width: 100%;
-    border-radius: 15px;
-}
-
 .details .rcurve img {
     width: 77%;
 }
-
 
 .trend .top {
     font-weight: 400;
@@ -912,11 +875,6 @@ body {
 .image-container .seriol-no {
     top: 0;
     left: 0;
-}
-
-.trend .owl-nav {
-    position: absolute;
-    display: none;
 }
 
 .trend .image-container img {
@@ -966,7 +924,11 @@ body {
     line-height: 19px;
     letter-spacing: -2%;
 }
-
+.overlay-text .carousellocation {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 400;
+}
 .like-user-footer span {
     font-size: 14px;
     color: #011332;
@@ -1094,8 +1056,6 @@ body {
     height: 36px;
 }
 
-
-
 /* footer style */
 .footer {
     background-color: #011332;
@@ -1187,17 +1147,14 @@ body {
     right: 55px;
     top: 8px;
     color: #011332 !important;
-    ;
 }
 
 
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
-
     .navbar .has-megamenu {
         position: static !important;
     }
-
     .navbar .megamenu {
         left: 0;
         right: 0;
@@ -1275,7 +1232,6 @@ body {
 }
 
 @media(max-width: 992px) {
-
     .navbar.fixed-top .navbar-collapse,
     .navbar.sticky-top .navbar-collapse {
         overflow-y: auto;
@@ -1598,8 +1554,6 @@ body {
     }
 }
 
-@media screen and (max-width: 360px) {}
-
 @media screen and (max-width: 321px) {
 
     .california-div {
@@ -1634,16 +1588,10 @@ body {
 
     .trend .viewtoplist {
         width: 280px;
-        /* Adjust width for smaller screens */
     }
 
     .trend .viewalltoplist {
         bottom: -200px;
-        /* Adjust position */
-    }
-
-    .trend .owl-nav {
-        display: none;
     }
 
     .trend .carouselpara {
@@ -1660,8 +1608,18 @@ body {
         font-size: 14px;
     }
 
-
-
 }
 
 /* ------------end of Responsive design ---------- */
+
+.details .btn .arrowes,.banner .btn .arrowes{
+    right: 44px !important;
+    top: 12px !important;
+    background-color: white !important;
+}
+.details .btn .view-category,.banner .btn .view-category{
+    padding: 15px 0 15px 35px !important;
+    font-size: 14px;
+    height: unset;
+    font-weight: 800;
+}
