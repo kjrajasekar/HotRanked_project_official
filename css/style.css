@@ -146,6 +146,7 @@ body {
     border-radius: 50%;
     right: 10px;
     top: 7px;
+    background-color:#077fe9 ;
 }
 
 .navbar .img-div+button {
@@ -213,25 +214,111 @@ body {
 }
 
 /************mega menu**************/
+.navbar .megamenu p {
+    color: #3A3A3A;
+    font-size: 14px;
+    font-weight: 500;
+}
 .navbar .megamenu a {
     text-decoration: none;
     color: #3A3A3A;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: "Roboto", serif;
 }
-
+.navbar-toggler{
+    z-index: 55 !important;
+}
 .navbar .megamenu li {
     margin: 3px 0;
 }
 
 .navbar .megamenu {
-    padding: 1.5rem 2.5rem;
+    /* padding: 1.5rem 2.5rem; */
     border-radius: 0;
     border: 0px;
     border-bottom: 2.5px solid #087FED;
 }
 
+.mega-background {
+    background: linear-gradient(to bottom, #fff, #e3f2fd);
+}
+
+.megamenus-btn {
+    border: 2px solid #90caf9;
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #000;
+    width: 50%;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.megamenus-btn-onlyfans {
+    background-color: #D6EBFE;
+    color: #000000;
+    font-size: 15px;
+   
+}
+
+.megamenus-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.megamenus-card a {
+    color: #065CAA !important;
+    /* font-weight: 700 !important; */
+     line-height: 19px;
+}
+.megamenu  h6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+.megamenus-card img {
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+ /* search box  */
+ .search-container {
+    display: none;
+    background: linear-gradient(to right, #007bff, #00d4ff);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+.search-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.search-box button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 --------------------------------------
 
@@ -331,7 +418,7 @@ body {
     font-size: 65px;
     font-weight: 900;
     line-height: 55px;
-    margin: 75px 0px 0px 0px;
+    
 }
 
 .california-div {
@@ -1180,6 +1267,7 @@ body {
 }
 
 @media(max-width: 1200px) {
+
     .owl-prev {
         left: -50px;
     }
@@ -1296,7 +1384,9 @@ body {
     .img-div {
         width: 35%;
     }
-
+    .megamenus-btn {
+        width: 100%;
+    }
     .owl-prev {
         left: -35px;
     }
@@ -1438,6 +1528,12 @@ body {
 
 
 /* ============ Mobile  view ============ */
+@media screen and (max-width: 575px) {
+    .search-container {display: block;}
+    .navbar .megamenu {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 475px) {
     .img-div {
         width: 50%;
@@ -1616,6 +1712,7 @@ body {
     right: 44px !important;
     top: 12px !important;
     background-color: white !important;
+    z-index: 5 !important;
 }
 .details .btn .view-category,.banner .btn .view-category{
     padding: 15px 0 15px 35px !important;
