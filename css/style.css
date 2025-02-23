@@ -291,7 +291,7 @@ body {
  /* search box  */
  .search-container {
     display: none;
-    background: linear-gradient(to right, #007bff, #00d4ff);
+    background: linear-gradient(to right, #087DEA, #00D6E4);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
