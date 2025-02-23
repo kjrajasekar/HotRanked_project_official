@@ -142,10 +142,12 @@ body {
 }
 
 .search-btn {
-    padding: 3px 12px 7px 12px;
+    /* padding: 3px 12px 7px 12px; */
     border-radius: 50%;
     right: 10px;
     top: 7px;
+    width: 40px;
+    height: 40px;
     background-color:#077fe9 ;
 }
 
@@ -1555,7 +1557,7 @@ body {
     }
 
     .search-btn {
-        padding: 4px 10px 7px 10px;
+        /* padding: 4px 10px 7px 10px; */
     }
 
     .text-large {
