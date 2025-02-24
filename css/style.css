@@ -89,6 +89,7 @@ button {
     font-size: 12px;
 }
 
+
 html,
 body {
     height: 100%;
@@ -148,7 +149,7 @@ body {
     top: 7px;
     width: 40px;
     height: 40px;
-    background-color:#077fe9 ;
+    background-color: #077fe9;
 }
 
 .navbar .img-div+button {
@@ -221,6 +222,7 @@ body {
     font-size: 14px;
     font-weight: 500;
 }
+
 .navbar .megamenu a {
     text-decoration: none;
     color: #3A3A3A;
@@ -228,9 +230,11 @@ body {
     font-weight: 600;
     font-family: "Roboto", serif;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     z-index: 55 !important;
 }
+
 .navbar .megamenu li {
     margin: 3px 0;
 }
@@ -261,7 +265,7 @@ body {
     background-color: #D6EBFE;
     color: #000000;
     font-size: 15px;
-   
+
 }
 
 .megamenus-card {
@@ -274,13 +278,15 @@ body {
 .megamenus-card a {
     color: #065CAA !important;
     /* font-weight: 700 !important; */
-     line-height: 19px;
+    line-height: 19px;
 }
-.megamenu  h6 {
+
+.megamenu h6 {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
 }
+
 .megamenus-card img {
     width: 100px;
     height: 60px;
@@ -288,8 +294,8 @@ body {
     margin-right: 10px;
 }
 
- /* search box  */
- .search-container {
+/* search box  */
+.search-container {
     display: none;
     background: linear-gradient(to right, #087DEA, #00D6E4);
     padding: 20px;
@@ -297,6 +303,7 @@ body {
     text-align: center;
     color: white;
 }
+
 .search-box {
     display: flex;
     align-items: center;
@@ -306,6 +313,7 @@ body {
     border: 2px solid black;
     overflow: hidden;
 }
+
 .search-box input {
     border: none;
     outline: none;
@@ -313,6 +321,7 @@ body {
     padding: 5px 10px;
     font-size: 16px;
 }
+
 .search-box button {
     background: #007bff;
     border: none;
@@ -420,7 +429,7 @@ body {
     font-size: 65px;
     font-weight: 900;
     line-height: 55px;
-    
+
 }
 
 .california-div {
@@ -1013,11 +1022,13 @@ body {
     line-height: 19px;
     letter-spacing: -2%;
 }
+
 .overlay-text .carousellocation {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.75);
     font-weight: 400;
 }
+
 .like-user-footer span {
     font-size: 14px;
     color: #011332;
@@ -1244,6 +1255,7 @@ body {
     .navbar .has-megamenu {
         position: static !important;
     }
+
     .navbar .megamenu {
         left: 0;
         right: 0;
@@ -1322,6 +1334,7 @@ body {
 }
 
 @media(max-width: 992px) {
+
     .navbar.fixed-top .navbar-collapse,
     .navbar.sticky-top .navbar-collapse {
         overflow-y: auto;
@@ -1386,9 +1399,11 @@ body {
     .img-div {
         width: 35%;
     }
+
     .megamenus-btn {
         width: 100%;
     }
+
     .owl-prev {
         left: -35px;
     }
@@ -1446,9 +1461,7 @@ body {
         line-height: 30px;
     }
 
-    .details .rcurve img {
-        width: 93%;
-    }
+
 
     .trend .image-number {
         left: 8%
@@ -1480,7 +1493,9 @@ body {
         left: 0;
         font-weight: 700;
     }
-
+    .details .rcurve img {
+        width: 93%;
+    }
     .details .view-category {
         width: 70%;
         font-size: 16px;
@@ -1531,23 +1546,27 @@ body {
 
 /* ============ Mobile  view ============ */
 @media screen and (max-width: 768px) {
-    .search-container {display: block;}
+    .search-container {
+        display: block;
+    }
+
     .navbar .megamenu {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 475px) {
     .img-div {
         width: 50%;
     }
 
     .owl-prev {
-        top: -100px;
+        top: -115px;
         left: 75%;
     }
 
     .owl-next {
-        top: -100px;
+        top: -115px;
         right: -20px;
     }
 
@@ -1708,13 +1727,16 @@ body {
 
 /* ------------end of Responsive design ---------- */
 
-.details .btn .arrowes,.banner .btn .arrowes{
+.details .btn .arrowes,
+.banner .btn .arrowes {
     right: 44px !important;
     top: 12px !important;
     background-color: white !important;
     z-index: 5 !important;
 }
-.details .btn .view-category,.banner .btn .view-category{
+
+.details .btn .view-category,
+.banner .btn .view-category {
     padding: 15px 0 15px 35px !important;
     font-size: 14px;
     height: unset;
