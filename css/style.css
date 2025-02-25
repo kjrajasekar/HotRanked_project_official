@@ -12,7 +12,6 @@
 
 html {
     font-size: 16px;
-    /* Base size */
 }
 
 
@@ -37,7 +36,7 @@ body {
     font-family: "Mona Sans", serif;
     font-size: 14px;
     text-transform: initial;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -48,11 +47,11 @@ p {
     text-transform: initial;
 }
 
-img {
+/* img {
     border: none;
     max-width: 100%;
     height: auto;
-}
+} */
 
 ul {
     margin: 0 auto;
@@ -143,12 +142,12 @@ body {
 }
 
 .search-btn {
-    /* padding: 3px 12px 7px 12px; */
+    padding: 3px 14px 7px 10px;
     border-radius: 50%;
     right: 10px;
-    top: 7px;
-    width: 40px;
-    height: 40px;
+    top: 6px;
+    width: 35px;
+    height: 35px;
     background-color: #077fe9;
 }
 
@@ -168,6 +167,8 @@ body {
 .input-search {
     background-color: #eceaea;
     border: 1px solid #ccc;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
 }
 
 .input-search::placeholder {
@@ -426,7 +427,7 @@ body {
 }
 
 .banner-text {
-    font-size: 65px;
+    font-size: 55px;
     font-weight: 900;
     line-height: 55px;
 
@@ -547,11 +548,11 @@ body {
 }
 
 .owl-prev {
-    left: -30px;
+    left: -45px;
 }
 
 .owl-next {
-    right: -30px;
+    right: -47px;
 }
 
 .icon-color {
@@ -1250,6 +1251,32 @@ body {
 }
 
 
+.details .btn .arrowes img,
+.banner .btn .arrowes img{
+    width: 20px;
+    right: 11px;
+    top:15px;
+}
+.details .btn .arrowes,
+.banner .btn .arrowes {
+    right: 64px !important;
+    top: 10px !important;
+    background-color: white !important;
+    z-index: 5 !important; 
+        width: 45px;
+        height: 45px;
+}
+
+.details .btn .view-category,
+.banner .btn .view-category {
+    padding: 15px 0 15px 35px !important;
+    font-size: 23px;
+    height: unset;
+    width: 55%;
+    font-weight: 700;
+    background-color: #023BE0;
+}
+
 /* ============ desktop view ============ */
 @media all and (min-width: 992px) {
     .navbar .has-megamenu {
@@ -1331,6 +1358,20 @@ body {
         font-size: 45px;
         line-height: 45px;
     }
+    .details .btn .view-category,
+.banner .btn .view-category {
+    width: 80%;
+    font-size: 20px;
+}
+.details .btn .arrowes, .banner .btn .arrowes {
+    right: 55px !important;
+    top: 8px !important;
+    width: 40px;
+    height: 40px;
+}
+.details .btn .arrowes img, .banner .btn .arrowes img {
+    top: 13px;
+}
 }
 
 @media(max-width: 992px) {
@@ -1399,17 +1440,19 @@ body {
     .img-div {
         width: 35%;
     }
-
+    .search-btn {
+        padding-top: 6px;
+    }
     .megamenus-btn {
         width: 100%;
     }
 
     .owl-prev {
-        left: -35px;
+        left: -42px;
     }
 
     .owl-next {
-        right: -35px;
+        right: -47px;
     }
 
     .text-large {
@@ -1629,6 +1672,9 @@ body {
 
 @media screen and (max-width: 380px) {
 
+.details .btn .arrowes img, .banner .btn .arrowes img {
+    right:8px
+}
     .category .owl-nav .owl-prev,
     .category .owl-nav .owl-next {
         top: -32%;
@@ -1670,7 +1716,21 @@ body {
 }
 
 @media screen and (max-width: 321px) {
-
+    .details .btn .view-category,
+.banner .btn .view-category {
+    width: 90%;
+    font-size: 15px;
+    padding: 13px 0 13px 25px;
+}
+.details .btn .arrowes, .banner .btn .arrowes {
+    right: 45px !important;
+    top: 8px !important;
+    width: 35px;
+    height: 35px;
+}
+.details .btn .arrowes img, .banner .btn .arrowes img {
+  width: 15px;
+}
     .california-div {
         width: 35%;
         right: 1%;
@@ -1726,19 +1786,3 @@ body {
 }
 
 /* ------------end of Responsive design ---------- */
-
-.details .btn .arrowes,
-.banner .btn .arrowes {
-    right: 44px !important;
-    top: 12px !important;
-    background-color: white !important;
-    z-index: 5 !important;
-}
-
-.details .btn .view-category,
-.banner .btn .view-category {
-    padding: 15px 0 15px 35px !important;
-    font-size: 14px;
-    height: unset;
-    font-weight: 800;
-}
