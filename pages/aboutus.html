@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- style -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-md-4 navbar-div  z-5">
+          <div class="container-fluid content">
+              <button class="navbar-toggler border-0 z-5" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="img-div">
+                  <a class="navbar-brand" href="#">
+                      <img class="img-fluid w-100" src="../assets/images/logo_htoranked.png" alt="">
+                  </a>
+              </div>
+              <button class="bg-blue search-btn border border-light d-lg-none" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-search" viewBox="0 0 16 16">
+                      <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                  </svg>
+              </button>
+              <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="col-12 col-lg-5 m-lg-4 m-3 my-lg-0">
+                      <form class="d-flex search-form position-relative d-none d-lg-block" role="search">
+                          <input class="form-control me-2    ps-4 rounded-pill input-search" type="search"
+                              placeholder="Search Keyword..." aria-label="Search">
+                          <button class="btn bg-blue search-btn position-absolute" type="submit">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                  class="bi bi-search" viewBox="0 0 16 16">
+                                  <path
+                                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                              </svg>
+                          </button>
+                      </form>
+                  </div>
+                  <div class="col-12 col-lg-6 ms-lg-5">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end">
+                          <li class="nav-item dropdown  mx-lg-2 has-megamenu">
+                              <a class="nav-link dropdown-toggle dropdown-text fw-medium" href="#" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  <div class="header-img me-1">
+                                      <img class="header-logo" src="../assets/images/only-fans-logo.png"
+                                          alt="only-fans-logo">
+                                  </div>
+                                  OnlyFans Search
+                                  <span class="ps-1"><img src="../assets/images/ar-down.svg" alt=""></span>
+                              </a>
+                              <div class="dropdown-menu megamenu mega-background   " role="menu">
+                                  <div class="container-fluid content">
+                                      <div class="row ">
+                                          <div class="container-fluid p-0 ">
+                                              <div class="search-container">
+                                                  <h2>OnlyFans Search</h2>
+                                                  <div class="search-box mt-3">
+                                                      <input type="text" placeholder="Search keyword...">
+                                                      <button>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                              height="16" fill="currentColor" class="bi bi-search"
+                                                              viewBox="0 0 16 16">
+                                                              <path
+                                                                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                                          </svg>
+                                                      </button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row  py-5">
+                                          <div class="col-12 col-xl-5">
+                                              <div class="row ">
+                                                  <div class="col text-start">
+                                                      <h6 class="title py-3">Top Only Fan Search</h6>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-12 col-md-6">
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#"><span
+                                                                      class="flag-container fi fi-us"></span>United
+                                                                  States OnlyFans</a></li>
+                                                          <li><a href="#"><span
+                                                                      class="flag-container fi fi-gb"></span>United
+                                                                  Kingdom Fans</a></li>
+                                                          <li><a href="#"><span
+                                                                      class="flag-container fi fi-ca"></span>Mexico
+                                                                  OnlyFans</a></li>
+                                                          <li><a href="#"><span
+                                                                      class="flag-container fi fi-ca"></span>Columbia
+                                                                  OnlyFans</a></li>
+                                                          <li><a href="#"><span
+                                                                      class="flag-container fi fi-au"></span>
+                                                                  Australia OnlyFans</a></li>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="col-12 col-md-6">
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#"><span
+                                                                      class="flag-container fi fi-us"></span>United
+                                                                  States OnlyFans</a></li>
+                                                          <li><a href="#"><span
+                                                                      class="flag-container fi fi-gb"></span>United
+                                                                  Kingdom Fans</a></li>
+                                                          <li><a href="#"><span
+                                                                      class="flag-container fi fi-ca"></span>Mexico
+                                                                  OnlyFans</a></li>
+                                                          <li><a href="#"><span
+                                                                      class="flag-container fi fi-ca"></span>Columbia
+                                                                  OnlyFans</a></li>
+                                                          <li><a href="#"><span
+                                                                      class="flag-container fi fi-au"></span>
+                                                                  Australia OnlyFans</a></li>
+                                                      </ul>
+                                                  </div>
+                                              </div>
+                                              <div class="row py-3  justify-content-center">
+                                                  <button class="megamenus-btn my-3">+ Link to all Countries</button>
+                                              </div>
+                                          </div>
+
+                                          <div class="col-12 col-xl-5">
+                                              <div class="row">
+                                                  <div class="col text-start">
+                                                      <h6 class="title py-3">Top Category OnlyFans</h6>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-12 col-lg-6">
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#"><span class="flag-container  ">
+                                                                      <img src="../assets/images/m-ic-img.svg" alt="">
+                                                                  </span>United
+                                                                  States OnlyFans</a></li>
+                                                          <li><a href="#"><span class="flag-container  ">
+                                                                      <img src="../assets/images/m-ic-imgs.svg"
+                                                                          alt="">
+                                                                  </span>United
+                                                                  Kingdom Fans</a></li>
+                                                          <li><a href="#"><span class="flag-container  ">
+                                                                      <img src="../assets/images/mu-ic-img.svg"
+                                                                          alt=""></span>Mexico
+                                                                  OnlyFans</a></li>
+                                                          <li><a href="#"><span class="flag-container  "><img
+                                                                          src="../assets/images/m-ic-imgs.svg"
+                                                                          alt=""></span>Columbia
+                                                                  OnlyFans</a></li>
+                                                          <li><a href="#"><span class="flag-container  ">
+                                                                      <img src="../assets/images/m-ic-img.svg" alt="">
+                                                                  </span>
+                                                                  Australia OnlyFans</a></li>
+
+                                                      </ul>
+                                                  </div>
+                                                  <div class="col-12 col-lg-6">
+                                                      <ul class="list-unstyled">
+                                                          <li><a href="#"><span class="flag-container  "><img
+                                                                          src="../assets/images/m-ic-img.svg"
+                                                                          alt=""></span>United
+                                                                  States OnlyFans</a></li>
+                                                          <li><a href="#"><span class="flag-container ">
+                                                                      <img src="../assets/images/mu-ic-img.svg"
+                                                                          alt=""></span>United
+                                                                  Kingdom Fans</a></li>
+                                                          <li><a href="#"><span class="flag-container "><img
+                                                                          src="../assets/images/m-ic-imgs.svg"
+                                                                          alt=""></span>Mexico
+                                                                  OnlyFans</a></li>
+                                                          <li><a href="#"><span class="flag-container  "><img
+                                                                          src="../assets/images/m-ic-img.svg"
+                                                                          alt=""></span>Columbia
+                                                                  OnlyFans</a></li>
+                                                          <li><a href="#"><span class="flag-container  "><img
+                                                                          src="../assets/images/mu-ic-img.svg"
+                                                                          alt=""></span>
+                                                                  Australia OnlyFans</a></li>
+                                                      </ul>
+                                                  </div>
+                                              </div>
+                                              <div class="row py-3 justify-content-center">
+                                                  <button class="megamenus-btn my-3">+ Link to all Countries</button>
+                                              </div>
+                                          </div>
+                                          <div class="col-12 col-xl-2">
+                                              <div class="row me-0 d-flex flex-column h-100 align-items-center mt-5 ">
+                                                  <button class="megamenus-btn megamenus-btn-onlyfans ">OnlyFans
+                                                      Search</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="nav-item dropdown  mx-lg-2 has-megamenu">
+                              <a class="nav-link dropdown-toggle dropdown-text" href="#" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  <div class="header-img me-1">
+                                      <img class="header-logo header-logo-user"
+                                          src="../assets/images/ic-userguide.png" alt="userguide logo">
+                                  </div>
+                                  User Guide
+                                  <span class="ps-1"><img src="../assets/images/ar-down.svg" alt=""></span>
+                              </a>
+                              <div class="dropdown-menu megamenu mega-background  " role="menu">
+                                  <div class="container-fluid">
+                                      <div class="row ">
+                                          <div class="container-fluid p-0">
+                                              <div class="search-container">
+                                                  <h2>OnlyFans Search</h2>
+                                                  <div class="search-box mt-3">
+                                                      <input type="text" placeholder="Search keyword...">
+                                                      <button>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                              height="16" fill="currentColor" class="bi bi-search"
+                                                              viewBox="0 0 16 16">
+                                                              <path
+                                                                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                                          </svg>
+                                                      </button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row p-sm-5">
+                                          <div class="col-12 col-lg-4">
+                                              <div class="row">
+                                                  <div class="col text-center">
+                                                      <h6 class="title py-3">Getting started Userguide</h6>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-start-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">Top Canadian OnlyFans</a>
+                                                          <p>Top Canadian OnlyFans</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-subscribe-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">How Does OnlyFans Work for Subscribers? </a>
+                                                          <p>Instructions for new users</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-niche-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">OnlyFans Free vs. Paid </a>
+                                                          <p>What’s the Difference?</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="col-12 col-lg-4">
+                                              <div class="row">
+                                                  <div class="col text-center">
+                                                      <h6 class="title py-3">Security & Account Management</h6>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-promote-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">OnlyFans Safety Guide</a>
+                                                          <p>Introduction to the platform</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-msub-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">How to Cancel an OnlyFans Subscription?</a>
+                                                          <p>Instructions for new users</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-sm-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">How to Find the Best OnlyFans Creators (By
+                                                              Category,
+                                                              Country & Niche)</a>
+                                                          <p>What’s the Difference?</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex ">
+                                                      <img src="../assets/images/menu-crditcard-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">How to Use OnlyFans Without a Credit Card</a>
+                                                          <p>What’s the Difference?</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                          <div class="col-12 col-lg-4">
+                                              <div class="row">
+                                                  <div class="col text-center">
+                                                      <h6 class="title py-3">Alternatives & platform comparisons</h6>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-ano-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">Best OnlyFans Alternatives </a>
+                                                          <p>Fansly, Patreon & More</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-deal-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">OnlyFans vs. Fansly vs. Patreon</a>
+                                                          <p>Which One is Best?</p>
+                                                      </div>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="nav-item dropdown has-megamenu  mx-lg-2">
+                              <a class="nav-link dropdown-toggle dropdown-text" href="#" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  <div class="header-img me-1">
+                                      <img class="header-logo header-logo-user" src="../assets/images/ic-creator.png"
+                                          alt="creator guide logo">
+                                  </div>
+                                  Creator Guide
+                                  <span class="ps-1"><img src="../assets/images/ar-down.svg" alt=""></span>
+                              </a>
+                              <div class="dropdown-menu megamenu mega-background" role="menu">
+                                  <div class="container-fluid">
+                                      <div class="row ">
+                                          <div class="container-fluid p-0">
+                                              <div class="search-container">
+                                                  <h2>OnlyFans Search</h2>
+                                                  <div class="search-box mt-3">
+                                                      <input type="text" placeholder="Search keyword...">
+                                                      <button>
+                                                          <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                              height="16" fill="currentColor" class="bi bi-search"
+                                                              viewBox="0 0 16 16">
+                                                              <path
+                                                                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                                          </svg>
+                                                      </button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row p-sm-5">
+                                          <div class="col-12 col-lg-4">
+                                              <div class="row">
+                                                  <div class="col text-center">
+                                                      <h6 class="title py-3">Getting started Userguide</h6>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-start-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">How to Start on OnlyFans</a>
+                                                          <p>Beginner's Guide</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-subscribe-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">OnlyFans Subscription Pricing</a>
+                                                          <p>How Much Should You Charge?</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-niche-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">Best Niches for OnlyFans Creators</a>
+                                                          <p>What Type of Content Sells Best?</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-niche-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">How to Make Money on OnlyFans</a>
+                                                          <p>Monetization Strategies</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                          <div class="col-12 col-lg-4">
+                                              <div class="row">
+                                                  <div class="col text-center">
+                                                      <h6 class="title py-3">Marketing & Promotion</h6>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-promote-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">How to Promote Your OnlyFans Account ?</a>
+                                                          <p>Best Growth Strategies</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-msub-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">How to Get More Subscribers on OnlyFans?</a>
+                                                          <p>Instructions for new users</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-sm-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">How to Use Social Media to Drive Traffic to Your
+                                                              OnlyFans?</a>
+                                                          <p>What’s the Difference?</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                          <div class="col-12 col-lg-4">
+                                              <div class="row">
+                                                  <div class="col text-center">
+                                                      <h6 class="title py-3">Creator Security & Privacy</h6>
+                                                  </div>
+                                              </div>
+                                              <div class="row">
+
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-ano-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">How to Stay Anonymous on OnlyFans ?</a>
+                                                          <p>Protecting Your Identity</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-deal-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">How to Deal With Leaked Content & Copyright
+                                                              Protection (DMCA Guide)?</a>
+                                                          <p>Which One is Best?</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="megamenus-card d-flex">
+                                                      <img src="../assets/images/menu-deal-img.svg" alt="">
+                                                      <div>
+                                                          <a href="#">OnlyFans Tax Guide</a>
+                                                          <p>Do You Need to Pay Taxes on Your Earnings?</p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+    <!-- -----About Us Section----- -->
+     <div class="container-fluid aboutusbox">
+        <div class="row ps-4 position-relative">
+            <div class="col p-2 p-md-4">
+                <h2 class="text-white fs-5 mt-4 mb-0 mb-md-1">About Us</h2>
+                <h1  class="text-white fw-bold aboutus-titleweb mb-0 mb-md-1">HotRanked.com</h1>
+                <p  class="text-white pb-3 pb-md-0">Discover the Best OnlyFans <br class="d-md-none"> Creators – Ranked & Curated</p>
+                    <!-- ---Left Side Logos -->
+                    <img src="../Images/Subtract1.png" class="aboutuslogo1" alt="">
+
+                    <!-- ---Right side logos -->
+                    <img src="../Images/Subtract.png" class="aboutuslogo2" alt="">
+                    <img src="../Images/Ellipse 390.png" class="aboutuslogo3" alt="">
+            </div>
+        </div>
+     </div>
+     <!-- --- -->
+
+     <!-- -----About Us - Body Section----- -->
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-12 col-md-7 d-flex align-items-center ps-lg-4">
+                    <div class="ps-lg-5 pt-5">
+                        <h5 class="mt-5" style="color:  #4C4C4C;">About Us – HotRanked.com</h5>
+                        <h1 class="aboutusbodytitle">Discover the <br class="d-none d-lg-block"> Best OnlyFans Creators Ranked & Curated</h1>
+                        <p class="aboutusbodypara">Welcome to HotRanked.com, the ultimate destination for discovering the top OnlyFans creators worldwide! Our platform is dedicated to providing high-quality, curated OnlyFans toplists, helping fans find the most engaging and trending models based on country, category, and interests.
+                        <p class="aboutusbodypara">We understand that finding the right OnlyFans creator can be overwhelming with so many profiles available. That’s why we do the hard work for you—ranking the best performers and presenting them in an easy-to-navigate format. Whether you’re searching for top fitness models, tattooed creators, cosplay stars, or trending influencers in the USA, UK, Germany, and beyond, HotRanked brings you hand-picked lists of the most exciting content creators.</p></p>
+                        <!-- ---Left Side Logos -->
+                            <img src="../Images/AboutUsBodylogo.png" class="aboutusbodylogo1" alt="">
+                    </div>
+                </div>
+
+                <div class="col position-relative d-flex align-items-center">
+                    <img src="../Images/about_image 1.png"  class="img-fluid aboutusbodyimg" alt="">
+                </div>
+            </div>
+        </div>
+     <!-- --- -->
+
+
+     <!-- -----HotRanked Unique Section----- -->
+      <div class="container-fluid hotrankedunique-section p-md-5">
+        <div class="row">
+            <img src="../Images/s1 19.png"  class="img-fluid hotrankedunique-logo" alt="">
+            <div class="col"><h1 class="text-center hotrankedunique-title mt-5">What Makes HotRanked Unique?</h1></div>
+        </div>
+
+        <div class="row mx-md-1 ps-md-5 pe-md-5 pt-3">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="px-4 py-4 hotrankedunique-box1">
+                    <img src="../Images/Vector.png"  class="img-fluid my-4 my-lg-2 my-xxl-4" alt="">
+                    <h4 class="text-white">Curated Toplists</h4>
+                    <p class="text-white">We don’t just list creators randomly. Our rankings are based on popularity, engagement, and quality content.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0">
+                <div class="px-4 py-4  hotrankedunique-box2">
+                    <img src="../Images/Vector (1).png"  class="img-fluid my-4 my-lg-2 my-xxl-4" alt="">
+                    <h4 class="text-white">Easy Navigation</h4>
+                    <p class="text-white ">Browse OnlyFans creators by category or country effortlessly.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                <div class="px-4 py-4  hotrankedunique-box3">
+                    <img src="../Images/Vector (2).png"  class="img-fluid my-4 my-lg-2 my-xxl-4" alt="">
+                    <h4 class="text-white">Regular Updates</h4>
+                    <p class="text-white ">We keep our rankings fresh, ensuring you always see the most relevant and trending performers.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                <div class="px-4 py-4  hotrankedunique-box4">
+                    <img src="../Images/Vector (3).png"  class="img-fluid my-4 my-lg-2 my-xxl-4" alt="">
+                    <h4 class="text-white">Curated Toplists</h4>
+                    <p class="text-white">We don’t just list creators randomly. Our rankings are based on popularity, engagement, and quality content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pb-5">
+            <div class="col text-center pt-5">
+                <img src="../Images/Group 267.png"  class="img-fluid" alt="">
+            </div>
+        </div>
+      </div>
+    <!-- --- -->
+
+
+    <!-- -------- Explore Section ------ -->
+      <div class="container-fluid pt-5">
+        <div class="row">
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <div>
+                    <div class="d-flex">
+                        <div><img src="../Images/s1 18.png" class="Explore-logo1" alt="" srcset=""></div>
+                        <div class="ms-auto"><img src="../Images/dot circle 9.png" class="Explore-logo2" alt=""></div>
+                    </div>
+                    <h1 class="explore-title mt-2">Whether you’re a fan looking <br class="d-none d-xxl-block"> for your next favorite creator <br class="d-none d-xxl-block"> or simply exploring OnlyFans <br class="d-none d-xxl-block"> rankings, 
+                        <span class="text-dark">HotRanked makes <br class="d-none d-xxl-block"> the search easier than ever.</span> </h1>
+                    <p>Start browsing today and explore the best OnlyFans <br class="d-none d-lg-block"> talent worldwide!</p>
+                    <div class=" d-flex position-relative">
+                        <p class="explorebutton d-inline-block ps-5 pe-3 py-3 text-white">Explore <span class="rounded-circle ms-3 px-2 d-inline-block" style="background-color: white;"><img src="../Images/Group 266.png" alt=""></span></p>
+                        <img src="../Images/Vector 59.png" class=" explorebuttonlogo" alt="">
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <img src="../Images/about_image1 1.png"  class="img-fluid aboutusbodyimg mt-5" alt="">
+            </div>
+        </div>
+      </div>
+    <!-- --- -->
+
+
+
+   <!-- Footer Section -->
+   <footer class="footer pt-5">
+    <div class="container mt-4 px-sm-0 px-4">
+        <div class="row text-start text-md-start">
+            <div class="col-12 col-xl-3 mb-3">
+                <h3 class="w-100"><a href=""><img class="img-fluid" src="../Images/Layer_2.svg" alt=""></a>
+                </h3>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-3">
+                <h5 class="text-white footer-title">QUICK LINKS</h5>
+                <ul class="list-unstyled footer-sub">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-3">
+                <h5 class="text-white footer-title">TOP CATEGORIES</h5>
+                <ul class="list-unstyled footer-sub">
+                    <li><a href="#">FREE OnlyFans</a></li>
+                    <li><a href="#">Teen OnlyFans</a></li>
+                    <li><a href="#">Latina OnlyFans</a></li>
+                    <li><a href="#">MILF OnlyFans</a></li>
+                    <li><a href="#">Ebony OnlyFans</a></li>
+                    <li><a href="#">Tiktok OnlyFans</a></li>
+                    <li><a href="#">BBW OnlyFans</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-3">
+                <h5 class="text-white footer-title">TOP COUNTRIES</h5>
+                <ul class="list-unstyled footer-sub">
+                    <li><a href="#"><span class="flag-container fi fi-us"></span>United States OnlyFans</a></li>
+                    <li><a href="#"><span class="flag-container fi fi-gb"></span>United Kingdom Fans</a></li>
+                    <li><a href="#"><span class="flag-container fi fi-ca"></span>Canada OnlyFans</a></li>
+                    <li><a href="#"><span class="flag-container fi fi-au"></span> Australia OnlyFans</a></li>
+                    <li><a href="#"><span class="flag-container fi fi-no"></span> Norway OnlyFans</a></li>
+                    <li><a href="#"><span class="flag-container fi fi-fi"></span> Finland OnlyFans</a></li>
+                    <li><a href="#"><span class="flag-container fi fi-dk"></span> Denmark OnlyFans</a></li>
+                    <li><a href="#"><span class="flag-container fi fi-ie"></span> Ireland OnlyFans</a></li>
+                    <li><a href="#"><span class="flag-container fi fi-se"></span> Sweden OnlyFans</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 col-xl-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="text-white footer-title">SUBSCRIBE OUR NEWSLETTER</h5>
+                        <div class="d-flex justify-content-start newsletter mt-3 position-relative">
+                            <input type="email" placeholder="Enter your Email ">
+                            <img src="./Images/Group 45.png" alt=""
+                                class="viewallfaq-arrow ms-3 p-5 rounded-circle position-absolute">
+                            <!-- <button class="text-white position-absolute border-0 rounded-circle">&rarr;</button> -->
+                        </div>
+                        <p class="mt-3">Your data will not be passed on to third parties</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="row mb-2 text-center">
+                <div class="col-12 copy-right">
+                    <p><a href="#">&copy; 2025 by www.hotranked.com All Rights Reserved</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+</body>
+</html>

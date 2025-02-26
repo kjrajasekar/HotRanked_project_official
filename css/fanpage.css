@@ -1,3 +1,7 @@
+* {
+    font-family: "Mona Sans", serif;
+}
+
 .ft-wgt-900 {
     font-weight: 900;
 }
@@ -12,6 +16,10 @@
 
 .ft-wgt-600 {
     font-weight: 600;
+}
+
+.ft-wgt-500 {
+    font-weight: 500;
 }
 
 .ft-wgt-400 {
@@ -37,6 +45,37 @@
 .w-60 {
     width: 60%;
 }
+.ft-16{
+    font-size: 16px !important;
+}
+.ft-23{
+    font-size: 23px !important;
+}
+
+.bd-left {
+    border-left: 1px solid #39ACE7;
+}
+
+.rating-stars {
+    vertical-align: middle;
+}
+
+.rating-stars strong span {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.tab-pane p {
+    font-size: 23px;
+    line-height: 19px;
+}
+
+.rating-stars strong {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 19px;
+    color: #000000;
+}
 
 .creator-img {
     width: 150%;
@@ -48,8 +87,26 @@
     top: 15%;
 }
 
+.btn-fans+p {
+    color: #011D4DA6;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 500;
+}
+
+.btn-fans {
+    background-color: #39ACE7;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 19px;
+    padding: 20px 30px;
+    border-radius: 5px;
+
+}
+
 .flag-img {
-    width: 360px;
+    width: 385px;
     height: 360px;
     border-radius: 50%;
     border: 15px solid white;
@@ -63,6 +120,8 @@
 
 
 .profile-card {
+    background-image: url('./../assets/icons/fan-bg-full.jpg');
+    background-size: cover;
     border-radius: 40px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -184,6 +243,7 @@
 }
 
 .table .cell {
+    display: table-cell;
     flex: 1;
     font-size: 14px;
     line-height: 25px;
@@ -207,11 +267,13 @@
     cursor: pointer;
     gap: 15px;
     width: fit-content;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 .icon-circle {
     background-color: #011E4F;
-    /* Dark blue */
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -228,9 +290,10 @@
 }
 
 .fan-profile .flag-container img {
-    width: 23px !important;
+    width: 22px !important;
 }
-.flag-icons{
+
+.flag-icons {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -242,59 +305,95 @@
     vertical-align: middle;
 }
 
+
 .fan-profile .flag-container {
     vertical-align: unset;
-    padding: 5px 0;
+    /* padding: 5px 0; */
     margin: 0 5px;
     border: 2px solid white;
 }
-.fan-bd{
+
+.fan-bd {
     border: 1px solid #39ACE773;
     background-color: #F2F9FC;
 }
-.fan-shape::after{
-    
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;  
-        width: 50%;  
-        height: 80%;  
-        background: url('../assets/images/fan-bg-right.svg');
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-        background-size: cover;
-        background-position: right center;
-        background-repeat: no-repeat;
-    
+.counts h1{
+vertical-align: middle;
+    color: white;
+    font-weight: 900;
+    font-size: 45px;
+}
+.counts{
+    top: -20px;
+    left: -40px;
+   padding: 16px 32px;
+    background-image: url('../assets/icons/fan-count-bg.svg') ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.table-custom td {
+    vertical-align: middle;
+}
+
+.myacord{
+    border-top: 1px solid #39ACE773;
+   margin-top: 0;
+    padding: 15px 0 5px 0;
+}
+
+.info-card {
+    background: #F2F9FC;
+    padding: 15px;
+    border: 1px solid #39ACE773;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
 .more-btn {
     height: 75px;
 }
+.close-card{
+   background-color: #DDFBFB;
+   border-radius: 0 0 35px 35px;
+   
+}
+.close-card button{
+   max-width: 250px;
+
+}
 
 .more-btn button {
-    border-radius:  35px 35px 0 0;
+    border-radius: 35px 35px 0 0;
     width: 100%;
     left: unset;
 }
-.extend-card{
-border-radius: 0;
-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+.extend-card {
+    border-radius: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 35px 35px;
 }
 
- /* Style for the active tab */
- .nav-tabs .nav-link.active {
-    border-bottom-color: 2px solid blue; /* Avoid double border */
-    background-color: #f8f9fa;
-    font-weight: bold;
+/* Style for the active tab */
+.nav-tabs .nav-link.active {
+    --bs-nav-tabs-border-width: 0 solid white !important;
+    border-bottom: 3px solid #087DEA;
 }
 
-/* Optional: Add some spacing */
+.nav-tabs .nav-link {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 900;
+    color: #000;
+}
+
+
 .tab-content {
     padding: 20px;
-    border: 2px solid #ddd; /* Border around content */
-    border-top: none; /* Avoid double border with tabs */
+    border-top: 1px solid #ACD8F8;
 }
 
 @media (max-width: 1201px) {
@@ -328,13 +427,31 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
+    .w-75{
+        width: 90% !important ;
+    }
+    .social .award-button {
+        padding: 5px 15px;
+        line-height: 17px;
+        font-weight: 700;
+        font-size: 13px;
+    }
+    .social .award-button img{
+        width: 25px;
+    }
+}
+@media (max-width: 993px) {
+    .more-btn button {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 769px) {
     .profile-image {
         max-width: 320px;
     }
-.more-btn button{
-        border-radius:  0 0 35px 35px;
-}
+
     .badge-discount {
         left: unset;
     }
@@ -342,7 +459,12 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     .more-details {
         width: auto;
     }
-
+    .btn-fans+p {
+        font-size: 14px;
+    }
+    .bd-left {
+        border-left: 0 solid #39ACE7;
+    }
     .sub-text-blue-size,
     .sub-text-gray-size {
         font-size: 40px;
@@ -365,11 +487,20 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 @media (max-width: 575px) {}
 
 @media (max-width: 426px) {
+    .profile-card h5 {
+        font-size: 15px;
+    }
     .flag-img {
         top: -60px;
         right: 0;
     }
-
+    .badge-discount {
+        left: 90%;}
+        .badge-price {
+            left: -25px;
+            width: 65px;
+            height: 65px;
+        }
     .profile-card h3 {
         font-size: 27px;
         line-height: 38px;

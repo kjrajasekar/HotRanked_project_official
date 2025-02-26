@@ -47,12 +47,6 @@ p {
     text-transform: initial;
 }
 
-/* img {
-    border: none;
-    max-width: 100%;
-    height: auto;
-} */
-
 ul {
     margin: 0 auto;
     list-style: none;
@@ -266,7 +260,7 @@ body {
     background-color: #D6EBFE;
     color: #000000;
     font-size: 15px;
-
+    width: 100%;
 }
 
 .megamenus-card {
@@ -1197,10 +1191,10 @@ body {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    /* Creates a circle */
+    border: 1px solid rgb(42, 40, 40);
     display: inline-block;
     background-size: cover;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
     align-items: center;
     vertical-align: middle;
 }
@@ -1252,19 +1246,20 @@ body {
 
 
 .details .btn .arrowes img,
-.banner .btn .arrowes img{
+.banner .btn .arrowes img {
     width: 20px;
     right: 11px;
-    top:15px;
+    top: 15px;
 }
+
 .details .btn .arrowes,
 .banner .btn .arrowes {
     right: 64px !important;
     top: 10px !important;
     background-color: white !important;
-    z-index: 5 !important; 
-        width: 45px;
-        height: 45px;
+    z-index: 5 !important;
+    width: 45px;
+    height: 45px;
 }
 
 .details .btn .view-category,
@@ -1308,7 +1303,6 @@ body {
 }
 
 @media(max-width: 1200px) {
-
     .owl-prev {
         left: -50px;
     }
@@ -1351,27 +1345,31 @@ body {
         font-size: 20px;
         bottom: 0;
         width: 100%;
-
     }
 
     .details .banner h1 {
         font-size: 45px;
         line-height: 45px;
     }
+
     .details .btn .view-category,
-.banner .btn .view-category {
-    width: 80%;
-    font-size: 20px;
-}
-.details .btn .arrowes, .banner .btn .arrowes {
-    right: 55px !important;
-    top: 8px !important;
-    width: 40px;
-    height: 40px;
-}
-.details .btn .arrowes img, .banner .btn .arrowes img {
-    top: 13px;
-}
+    .banner .btn .view-category {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .details .btn .arrowes,
+    .banner .btn .arrowes {
+        right: 55px !important;
+        top: 8px !important;
+        width: 40px;
+        height: 40px;
+    }
+
+    .details .btn .arrowes img,
+    .banner .btn .arrowes img {
+        top: 13px;
+    }
 }
 
 @media(max-width: 992px) {
@@ -1431,8 +1429,6 @@ body {
         font-weight: 700;
         font-size: 14px;
     }
-
-
 }
 
 /* ============ Tab view ============ */
@@ -1440,9 +1436,11 @@ body {
     .img-div {
         width: 35%;
     }
+
     .search-btn {
         padding-top: 6px;
     }
+
     .megamenus-btn {
         width: 100%;
     }
@@ -1481,7 +1479,6 @@ body {
     .category .view-category-div,
     .trend .view-category-div {
         top: 10px;
-
     }
 
     .country-div .view-country-div {
@@ -1503,8 +1500,6 @@ body {
         font-size: 30px;
         line-height: 30px;
     }
-
-
 
     .trend .image-number {
         left: 8%
@@ -1536,9 +1531,11 @@ body {
         left: 0;
         font-weight: 700;
     }
+
     .details .rcurve img {
         width: 93%;
     }
+
     .details .view-category {
         width: 70%;
         font-size: 16px;
@@ -1672,9 +1669,11 @@ body {
 
 @media screen and (max-width: 380px) {
 
-.details .btn .arrowes img, .banner .btn .arrowes img {
-    right:8px
-}
+    .details .btn .arrowes img,
+    .banner .btn .arrowes img {
+        right: 8px
+    }
+
     .category .owl-nav .owl-prev,
     .category .owl-nav .owl-next {
         top: -32%;
@@ -1716,21 +1715,27 @@ body {
 }
 
 @media screen and (max-width: 321px) {
+
     .details .btn .view-category,
-.banner .btn .view-category {
-    width: 90%;
-    font-size: 15px;
-    padding: 13px 0 13px 25px;
-}
-.details .btn .arrowes, .banner .btn .arrowes {
-    right: 45px !important;
-    top: 8px !important;
-    width: 35px;
-    height: 35px;
-}
-.details .btn .arrowes img, .banner .btn .arrowes img {
-  width: 15px;
-}
+    .banner .btn .view-category {
+        width: 90%;
+        font-size: 15px;
+        padding: 13px 0 13px 25px;
+    }
+
+    .details .btn .arrowes,
+    .banner .btn .arrowes {
+        right: 45px !important;
+        top: 8px !important;
+        width: 35px;
+        height: 35px;
+    }
+
+    .details .btn .arrowes img,
+    .banner .btn .arrowes img {
+        width: 15px;
+    }
+
     .california-div {
         width: 35%;
         right: 1%;
