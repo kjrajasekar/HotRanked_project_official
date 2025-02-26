@@ -1244,7 +1244,56 @@ body {
     color: #011332 !important;
 }
 
+.terms .card{
+    background-color: #F4FAFF ;
+    border-radius: 10px;
+    border:1px solid #0E7FE973;
+}
+.terms p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+color: #636363;
+}
+.contacts input::placeholder, .contacts textarea::placeholder{
+font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #000000BF;
+    font-family: "Roboto", serif;;
 
+}
+.contacts button{
+    background-color: #087FED;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 19px;
+    padding: 25px 15px;
+}
+
+.contacts h3{
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 26px;
+}
+.contacts p strong{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+}
+.contacts p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #077DEA;
+}
+.terms h3{
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 55px;
+    color: #011E4F;
+}
 .details .btn .arrowes img,
 .banner .btn .arrowes img {
     width: 20px;
