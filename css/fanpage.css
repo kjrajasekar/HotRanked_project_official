@@ -1,5 +1,6 @@
 * {
     font-family: "Mona Sans", serif;
+    text-decoration: none;
 }
 
 .ft-wgt-900 {
@@ -45,10 +46,16 @@
 .w-60 {
     width: 60%;
 }
-.ft-16{
+
+.ft-16 {
     font-size: 16px !important;
 }
-.ft-23{
+
+.ft-18 {
+    font-size: 18px !important;
+}
+
+.ft-23 {
     font-size: 23px !important;
 }
 
@@ -60,7 +67,12 @@
     vertical-align: middle;
 }
 
-.rating-stars strong span {
+.rating-stars h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.rating-stars h1 span {
     font-size: 16px;
     line-height: 19px;
 }
@@ -77,14 +89,26 @@
     color: #000000;
 }
 
+.creator-img+img {
+    width: 355px;
+    height: 355px;
+    border: 15px solid #087DEA;
+}
+
 .creator-img {
-    width: 150%;
-    max-width: 475px;
+    /* width: 150%; */
+    width: 385px;
+    height: 385px;
     border-radius: 50%;
-    border: 15px solid #00C0FF;
+    border: 15px solid #00D6E4;
     object-fit: cover;
     z-index: 2;
-    top: 15%;
+    top: 4%;
+    left: -15%;
+}
+
+.creator-h {
+    min-height: 500px;
 }
 
 .btn-fans+p {
@@ -92,6 +116,7 @@
     font-size: 18px;
     line-height: 19px;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 .btn-fans {
@@ -102,60 +127,90 @@
     line-height: 19px;
     padding: 20px 30px;
     border-radius: 5px;
+    width: 300px;
+    height: 80px;
+}
 
+.line-hr {
+    font-size: 21px;
+    line-height: 19px;
+    font-weight: 900;
+}
+
+.tab-pane .flag-container {
+    border: 0 !important;
 }
 
 .flag-img {
     width: 385px;
-    height: 360px;
+    height: 385px;
     border-radius: 50%;
     border: 15px solid white;
     position: absolute;
     top: 5px;
-    /* clip-path: circle(48.7% at 30% 30%); */
-    rotate: 180deg;
     right: -55px;
     z-index: 1;
 }
 
 
 .profile-card {
-    background-image: url('./../assets/icons/fan-bg-full.jpg');
+    background-color: white;
+    background-image: url('./../assets/icons/fan-bg-full.svg');
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 40px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1280px;
+    border: 1px solid #0395FFBF;
+    box-shadow: 0 0 8px #D2E0EBA6;
+
 }
 
 .profile-image {
-    width: 100%;
-    max-width: 500px;
+    width: 680px;
+    height: 650px;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     object-fit: cover;
+    margin: 0 auto;
 }
 
 .badge-discount {
-    background: #FFD700;
+    background: linear-gradient(90deg, #FFB001, #FFDC00);
     color: #000;
     font-weight: bold;
     padding: 10px;
-    border-radius: 0 60% 0 60%;
-    top: 25%;
-    left: 6.5%;
-    width: 90px;
+    border-radius: 0 60px 0 60px;
+    font-size: 17px;
+    width: 125px;
+    height: 40px;
+    top: 10%;
+    left: 16%;
     display: inline-block;
     z-index: 1;
 }
 
+.badge-price h1 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 28px;
+}
+
+.badge-price p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
 .badge-price {
-    background: rgb(3, 149, 255);
     background: linear-gradient(rgba(3, 149, 255, 1) 30%, rgba(0, 60, 224, 1) 100%);
     color: #fff;
     font-weight: bold;
     border-radius: 50%;
-    top: 25%;
-    width: 90px;
-    height: 90px;
-    left: 0;
+    top: 10%;
+    left: 9%;
+    width: 110px;
+    height: 110px;
+
 }
 
 .feature-badge {
@@ -198,9 +253,21 @@
     right: 0;
 }
 
+.profile-card .profile-content {
+    top: 5px;
+}
+
+.profile-card a {
+    text-decoration: none;
+}
+
 .profile-card h3 {
-    font-size: 43px;
-    line-height: 63px;
+    font-size: 42px;
+    line-height: 50px;
+}
+
+.profile-card h6 {
+    font-size: 17px;
 }
 
 .profile-card h5 {
@@ -211,6 +278,8 @@
 .profile-card h6 {
     font-size: 17px;
     line-height: 19px;
+    margin: 2px;
+    font-weight: 900;
 }
 
 .profile-card p {
@@ -242,13 +311,20 @@
     display: flex;
 }
 
+.table .cell p {
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
 .table .cell {
     display: table-cell;
     flex: 1;
-    font-size: 14px;
-    line-height: 25px;
-    vertical-align: middle;
-    font-weight: 500;
+    padding: 0;
 
 }
 
@@ -258,7 +334,7 @@
     align-items: center;
     background-color: #E3F1F9;
     border-radius: 50px;
-    padding: 8px 20px;
+    padding: 6px 9px;
     line-height: 19px;
     font-weight: 700;
     font-size: 14px;
@@ -267,15 +343,17 @@
     cursor: pointer;
     gap: 15px;
     width: fit-content;
-    justify-content: center;
+    justify-content: start;
     text-align: center;
     width: 100%;
 }
 
+
+
 .icon-circle {
     background-color: #011E4F;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -285,12 +363,14 @@
 .icon-circle::before {
     content: "✔";
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 
-.fan-profile .flag-container img {
-    width: 22px !important;
+.profile-detail .flag-container {
+    margin: 0 !important;
+    width: 16px !important;
+
 }
 
 .flag-icons {
@@ -305,29 +385,60 @@
     vertical-align: middle;
 }
 
+.info-card h5 {
+    font-size: 19px;
+}
+
+.profile-detail {
+    width: 65%;
+    top: -160px;
+    position: relative;
+    max-height: 80px;
+}
+
+.profile-more {
+    background-color: #DDFBFB;
+    border-radius: 0 0 40px 40px;
+    border-top: 1px solid #0395FFBF;
+
+}
+
+.fan-profile .profile-content .flag-container {
+    box-shadow: 0 0 4px 0 #000000;
+}
+
+.fan-profile .profile-detail .flag-container {
+    height: 25px;
+}
+
 
 .fan-profile .flag-container {
     vertical-align: unset;
-    /* padding: 5px 0; */
+
+    width: 35px;
+    height: 35px;
     margin: 0 5px;
     border: 2px solid white;
 }
 
 .fan-bd {
-    border: 1px solid #39ACE773;
-    background-color: #F2F9FC;
+    border: 2px solid #39ACE773;
+    background-color: white;
+    font-size: 18px;
 }
-.counts h1{
-vertical-align: middle;
+
+.counts h1 {
+    vertical-align: middle;
     color: white;
     font-weight: 900;
     font-size: 45px;
 }
-.counts{
-    top: -20px;
-    left: -40px;
-   padding: 16px 32px;
-    background-image: url('../assets/icons/fan-count-bg.svg') ;
+
+.counts {
+    top: -30px;
+    left: -43px;
+    padding: 16px 32px;
+    background-image: url('../assets/icons/fan-count-bg.svg');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 3;
@@ -337,50 +448,73 @@ vertical-align: middle;
     vertical-align: middle;
 }
 
-.myacord{
-    border-top: 1px solid #39ACE773;
-   margin-top: 0;
-    padding: 15px 0 5px 0;
+.myacord {
+    border-top: 1px solid white;
+    margin-top: 0;
+    /* padding: 15px 0 5px 0; */
 }
 
 .info-card {
     background: #F2F9FC;
-    padding: 15px;
+    padding: 15px 35px;
     border: 1px solid #39ACE773;
     border-radius: 12px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     height: 100%;
 }
 
-.more-btn {
-    height: 75px;
+.info-card .flag-container {
+    width: 16px;
+    height: 16px;
 }
-.close-card{
-   background-color: #DDFBFB;
-   border-radius: 0 0 35px 35px;
-   
-}
-.close-card button{
-   max-width: 250px;
 
+
+.close-card {
+    background-color: #DDFBFB;
+    border-radius: 0 0 42px 42px;
+    border-top: 1px #ACD8F8 solid;
+}
+
+.profile .w-75 {
+    width: 90% !important;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.close-card button {
+    max-width: 250px;
+
+}
+
+.profile-card .flag-icons {
+    border-width: 1px;
 }
 
 .more-btn button {
     border-radius: 35px 35px 0 0;
-    width: 100%;
+    width: 65%;
+    height: 100px;
+    font-weight: 900;
     left: unset;
+    right: 25%;
+}
+
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0;
 }
 
 .extend-card {
     border-radius: 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 35px 35px;
+    background-color: #FFFFFF40;
 }
 
 /* Style for the active tab */
 .nav-tabs .nav-link.active {
     --bs-nav-tabs-border-width: 0 solid white !important;
     border-bottom: 3px solid #087DEA;
+    padding-bottom: 15px;
 }
 
 .nav-tabs .nav-link {
@@ -397,9 +531,11 @@ vertical-align: middle;
 }
 
 @media (max-width: 1201px) {
-    .creator-img {
-        width: 100%;
-        max-width: 375px;
+
+    .creator-img,
+    .creator-img+img {
+        width: 325px;
+        height: 325px;
     }
 
     .badge-discount {
@@ -428,23 +564,101 @@ vertical-align: middle;
 }
 
 @media (max-width: 1025px) {
-    .w-75{
-        width: 90% !important ;
+    .w-75 {
+        width: 90% !important;
     }
+
+    .text-large {
+        font-size: 38px;
+    }
+
+    .creator-img {
+        width: 290px;
+        height: 290px;
+    }
+
+    /*---*/
+    .profile-image {
+        width: 540px;
+        height: 515px;
+    }
+
+    .profile-card .profile-content {
+        top: -20px;
+    }
+
+    .profile-card h3 {
+        font-size: 38px;
+        padding-top: 25px !important;
+    }
+
+    .profile-card {
+        max-width: 972px;
+    }
+
+    .counts {
+        padding: 8px 25px;
+        top: -26px;
+        left: -22px;
+    }
+
+    .counts h1 {
+        font-size: 30px;
+    }
+
+    .badge-discount {
+        left: 16.5%;
+    }
+
+    .profile-card {
+        background-size: contain;
+    }
+
+    .profile-detail {
+        top: -25px;
+        max-height: 220px;
+        width: 95%;
+    }
+
+    .pro-max {
+        margin-left: 45px
+    }
+
     .social .award-button {
-        padding: 5px 15px;
-        line-height: 17px;
-        font-weight: 700;
-        font-size: 13px;
+        margin: 5px;
     }
-    .social .award-button img{
-        width: 25px;
+
+    /*---*/
+
+    .creator-img+img {
+        width: 270px;
+        height: 270px;
+        right: -5%;
     }
+
+    .more-btn button {
+        width: 70%;
+        height: 95px;
+    }
+
+    /* .social .award-button {
+            padding: 5px 15px;
+            line-height: 17px;
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .social .award-button img {
+            width: 25px;
+        } */
 }
+
 @media (max-width: 993px) {
     .more-btn button {
         border-radius: 0;
     }
+
+
 }
 
 @media (max-width: 769px) {
@@ -452,22 +666,49 @@ vertical-align: middle;
         max-width: 320px;
     }
 
-    .badge-discount {
-        left: unset;
+    h3 {
+        font-size: 16px;
+    }
+
+    .s14-icon {
+        bottom: 7%;
+    }
+
+    .text-large {
+        font-size: 27px;
+    }
+
+    .creator-img {
+        width: 240px;
+        height: 240px;
+        top: 10%;
+    }
+
+    .creator-img+img {
+        width: 220px;
+        height: 220px;
+        right: -5%;
+    }
+
+    .creator-h {
+        min-height: 400px;
     }
 
     .more-details {
         width: auto;
     }
+
     .btn-fans+p {
         font-size: 14px;
     }
+
     .bd-left {
         border-left: 0 solid #39ACE7;
     }
+
     .sub-text-blue-size,
     .sub-text-gray-size {
-        font-size: 40px;
+        font-size: 34px;
         line-height: 40px;
     }
 
@@ -477,46 +718,252 @@ vertical-align: middle;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+        margin-top: 25px;
     }
 
     .w-60 {
         width: 90%;
     }
+
+
+    /*---*/
+    .badge-price {
+        left: unset;
+    }
+
+    .badge-discount {
+        left: unset;
+        right: -10%;
+    }
+
+    .profile-image {
+        width: 330px;
+        height: 320px;
+    }
+
+    .profile-card .profile-content {
+        top: -20px;
+    }
+
+    .profile-card h3 {
+        font-size: 26px;
+        line-height: 32px;
+        padding-top: 5px !important;
+    }
+
+    .profile-card h5 {
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+
+    .profile-card h6 {
+        font-size: 14px;
+    }
+
+    .btn-rmore {
+        display: block !important;
+    }
+
+    .profile-card {
+        max-width: 720px;
+        background-size: contain;
+    }
+
+    .fan-profile .flag-container {
+
+        width: 26px;
+        height: 26px;
+    }
+
+    .counts {
+        padding: 8px 25px;
+        top: -26px;
+        left: -22px;
+    }
+
+    .counts h1 {
+        font-size: 30px;
+    }
+
+
+
+
+    .profile-detail {
+        top: -45px;
+        max-height: 420px;
+        width: 55%;
+    }
+
+    .pro-max {
+        margin-left: 0;
+    }
+
+    .social .award-button {
+        margin: 5px;
+    }
+
+    .more-btn button {
+        border-radius: 0 0 35px 35px;
+        width: 45%;
+        height: 110px;
+        right: 0%;
+        top: -110px;
+    }
+
+    /*---*/
 }
 
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+    .myacord {
+        border-top: 1px solid #39ACE773;
+    }
+
+    .text-large {
+        font-size: 30px;
+    }
+
+    .creator-img {
+        top: -9%;
+    }
+
+    .creator-img+img {
+        right: 0;
+    }
+
+    .creator-h {
+        min-height: 300px;
+    }
+
+    .more-btn button {
+
+        width: 100%;
+        height: 80px;
+        right: 0%;
+        top: -29px;
+    }
+}
 
 @media (max-width: 426px) {
+
     .profile-card h5 {
         font-size: 15px;
     }
+
+    .btn-fans {
+        width: 210px;
+        height: 65px;
+    }
+
     .flag-img {
         top: -60px;
         right: 0;
     }
+
+    .profile-detail {
+        top: 0;
+        width: 100%;
+        padding: 0 16px !important;
+        margin: 0 !important;
+    }
+
+    .profile-image {
+        width: 210px;
+        height: 200px;
+    }
+
+    .more-btn button {
+        font-size: 18px;
+    }
+
+    .profile-card h6 {
+        padding: 10px 10px;
+        margin: 0;
+    }
+
     .badge-discount {
-        left: 90%;}
-        .badge-price {
-            left: -25px;
-            width: 65px;
-            height: 65px;
-        }
+        left: 80%;
+        right: 0;
+    }
+
+    .badge-price {
+        left: -25px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .sub-text-gray-size,
+    .sub-text-blue-size {
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 28px;
+    }
+
     .profile-card h3 {
         font-size: 27px;
         line-height: 38px;
+    }
+
+    .profile-card {
+        max-width: 90%;
+    }
+
+    .info-card {
+        padding: 5px 15px;
     }
 }
 
 @media (max-width: 380px) {
     .badge-discount {
-        right: -20%;
+        top: 0;
+        left: 85%;
     }
 
     .badge-price {
-        left: -5%;
+        left: -15%;
+        top: 0;
+    }
+
+    .text-large {
+        font-size: 28px;
+    }
+
+    .creator-img {
+        width: 220px;
+        height: 220px;
+        top: 0%;
+    }
+
+    .creator-img+img {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .creator-h {
+        min-height: 300px;
     }
 }
 
-@media (max-width: 360px) {}
+@media (max-width: 360px) {
+    .text-large {
+        font-size: 26px;
+    }
+}
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .text-large {
+        font-size: 22px;
+    }
+
+    .creator-img {
+        width: 190px;
+        height: 190px;
+        top: -6%;
+
+    }
+
+    .creator-img+img {
+        width: 170px;
+        height: 170px;
+    }
+}
