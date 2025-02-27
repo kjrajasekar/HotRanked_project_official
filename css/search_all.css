@@ -718,10 +718,9 @@ button:focus:not(:focus-visible) {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    /* Creates a circle */
     display: inline-block;
     background-size: cover;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
     align-items: center;
     vertical-align: middle;
 }
