@@ -448,6 +448,10 @@
     vertical-align: middle;
 }
 
+.myacord .flag-container {
+    border: 0;
+}
+
 .myacord {
     border-top: 1px solid white;
     margin-top: 0;
@@ -461,6 +465,7 @@
     border-radius: 12px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     height: 100%;
+    margin: 10px;
 }
 
 .info-card .flag-container {
@@ -641,6 +646,15 @@
         height: 95px;
     }
 
+    .info-card {
+        padding: 15px 22px;
+        margin: 5px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
     /* .social .award-button {
             padding: 5px 15px;
             line-height: 17px;
@@ -714,7 +728,7 @@
 
     .profile-para {
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -785,13 +799,10 @@
         font-size: 30px;
     }
 
-
-
-
     .profile-detail {
-        top: -45px;
+        top: -30px;
         max-height: 420px;
-        width: 55%;
+        width: 75%;
     }
 
     .pro-max {
@@ -805,9 +816,9 @@
     .more-btn button {
         border-radius: 0 0 35px 35px;
         width: 45%;
-        height: 110px;
-        right: 0%;
-        top: -110px;
+        height: 144px;
+        right: 0px;
+        top: -144px;
     }
 
     /*---*/
@@ -835,11 +846,18 @@
     }
 
     .more-btn button {
-
         width: 100%;
         height: 80px;
         right: 0%;
         top: -29px;
+    }
+
+    .myacord::after {
+        content: " \f0d7";
+        float: right;
+        color: #087DEA;
+        font-family: 'FontAwesome';
+
     }
 }
 
@@ -895,7 +913,8 @@
     .sub-text-blue-size {
         padding: 0 !important;
         margin: 0 !important;
-        font-size: 28px;
+        font-size: 22px;
+        line-height: 1;
     }
 
     .profile-card h3 {
@@ -909,6 +928,14 @@
 
     .info-card {
         padding: 5px 15px;
+    }
+
+    .rating-stars {
+        flex-grow: 7;
+    }
+
+    .profile-card {
+        background-image: url('../assets/icons/fan-bg-small.svg');
     }
 }
 
@@ -942,6 +969,15 @@
     .creator-h {
         min-height: 300px;
     }
+
+    .profile-card h3 {
+        font-size: 20px;
+        line-height: 1;
+        margin-top: 8px;
+    }
+    .profile-card p {
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -951,6 +987,14 @@
 }
 
 @media (max-width: 320px) {
+    .profile-card p {
+        font-size: 12px;
+    }
+
+    .profile-card strong {
+        font-size: 12px;
+    }
+
     .text-large {
         font-size: 22px;
     }
@@ -961,9 +1005,27 @@
         top: -6%;
 
     }
+    .badge-price h1 {
+        font-size: 26px;
+    }
+    .badge-price p {
+        margin-top: 0;
+    }
 
     .creator-img+img {
         width: 170px;
         height: 170px;
+    }
+
+    .tab-content {
+        padding: 10px;
+    }
+
+    .table {
+        margin: 0;
+    }
+
+    .info-card {
+        padding: 5px 10px;
     }
 }

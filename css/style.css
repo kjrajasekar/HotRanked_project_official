@@ -1244,26 +1244,31 @@ body {
     color: #011332 !important;
 }
 
-.terms .card{
-    background-color: #F4FAFF ;
+.terms .card {
+    background-color: #F4FAFF;
     border-radius: 10px;
-    border:1px solid #0E7FE973;
+    border: 1px solid #0E7FE973;
 }
-.terms p{
+
+.terms p {
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
-color: #636363;
+    color: #636363;
 }
-.contacts input::placeholder, .contacts textarea::placeholder{
-font-weight: 500;
+
+.contacts input::placeholder,
+.contacts textarea::placeholder {
+    font-weight: 500;
     font-size: 15px;
     line-height: 15px;
     color: #000000BF;
-    font-family: "Roboto", serif;;
+    font-family: "Roboto", serif;
+    ;
 
 }
-.contacts button{
+
+.contacts button {
     background-color: #087FED;
     color: white;
     font-weight: 900;
@@ -1272,45 +1277,51 @@ font-weight: 500;
     padding: 25px 15px;
 }
 
-.contacts .border-info{
-    border-color:#0E7FE973 !important ;
+.contacts .border-info {
+    border-color: #0E7FE973 !important;
 }
-.contacts .icons-card{
+
+.contacts .icons-card {
     background-color: #0E7FE90D;
     border-right: 1px solid #0E7FE973;
 }
-.contacts h3{
+
+.contacts h3 {
     font-weight: 800;
     font-size: 26px;
     line-height: 26px;
 }
-.contacts p strong{
+
+.contacts p strong {
     font-weight: 600;
     font-size: 18px;
     line-height: 30px;
 }
-.contacts p{
+
+.contacts p {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
     color: #077DEA;
 }
-.terms h3{
+
+.terms h3 {
     font-weight: 900;
     font-size: 26px;
     line-height: 55px;
     color: #011E4F;
 }
+
 .details .btn .arrowes img,
 .banner .btn .arrowes img {
-    width: 20px;
-    right: 11px;
-    top: 15px;
+    width: 12px;
+    right: 15px;
+    top: 17px;
 }
 
 .details .btn .arrowes,
 .banner .btn .arrowes {
-    right: 64px !important;
+    right: 58px !important;
     top: 10px !important;
     background-color: white !important;
     z-index: 5 !important;
@@ -1323,7 +1334,7 @@ font-weight: 500;
     padding: 15px 0 15px 35px !important;
     font-size: 23px;
     height: unset;
-    width: 55%;
+    width: 46%;
     font-weight: 700;
     background-color: #023BE0;
 }
@@ -1410,21 +1421,23 @@ font-weight: 500;
 
     .details .btn .view-category,
     .banner .btn .view-category {
-        width: 80%;
+        width: 62%;
         font-size: 20px;
     }
 
-    .details .btn .arrowes,
+    .details .btn .arrowes {}
+
     .banner .btn .arrowes {
-        right: 55px !important;
-        top: 8px !important;
+        right: 53px !important;
+        top: 9px !important;
         width: 40px;
         height: 40px;
     }
 
-    .details .btn .arrowes img,
+    .details .btn .arrowes img {}
+
     .banner .btn .arrowes img {
-        top: 13px;
+        top: 14px;
     }
 }
 
@@ -1489,8 +1502,31 @@ font-weight: 500;
 
 /* ============ Tab view ============ */
 @media screen and (max-width: 769px) {
+    .banner .btn .view-category {
+        width: 80%;
+    }
+
+    .details .btn .view-category {
+        width: 80%;
+        font-size: 14px;
+    }
+
     .img-div {
         width: 35%;
+    }
+
+    .details .btn .arrowes {
+        /* right: 48px !important;
+        top: 6px !important; */
+        right: 46px !important;
+        top: 7px !important;
+        width: 35px;
+        height: 35px;
+    }
+
+    .details .btn .arrowes img {
+        right: 11px;
+        top: 13px
     }
 
     .search-btn {
@@ -1721,6 +1757,13 @@ font-weight: 500;
     .country-div .view-country-div {
         top: 15px !important;
     }
+    .details .btn .view-category {
+        width: 60%;
+        font-size: 14px;
+    }
+    .banner .btn .view-category {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -1768,18 +1811,52 @@ font-weight: 500;
     .footer .viewallfaq-arrow {
         right: 12px;
     }
+    .details .btn .arrowes {
+    
+        top: 7px !important;
+    }
+    .details .btn .arrowes img {
+        right: 11px !important;
+        top: 14px !important;
+    }
+    .banner .btn .view-category {
+        width: 75%;
+    }
+    .banner .btn .arrowes img {
+        top: 15px;
+        right: 13px;
+    }
 }
 
+@media screen and (max-width: 360px) {
+    .banner .btn .view-category {
+        font-size: 16px;
+    }
+    .banner .btn .arrowes {
+        right: 51px !important;
+        top: 7px !important;}
+        .details .btn .arrowes {
+            right: 47px !important;
+            top: 9px !important;
+        }
+        .details .btn .arrowes img {
+            top: 14px;
+            right: 11px;}
+}
 @media screen and (max-width: 321px) {
 
-    .details .btn .view-category,
+    .details .btn .view-category{
+
+    }
     .banner .btn .view-category {
         width: 90%;
         font-size: 15px;
         padding: 13px 0 13px 25px;
     }
 
-    .details .btn .arrowes,
+    .details .btn .arrowes{
+
+    }
     .banner .btn .arrowes {
         right: 45px !important;
         top: 8px !important;
@@ -1787,9 +1864,11 @@ font-weight: 500;
         height: 35px;
     }
 
-    .details .btn .arrowes img,
+    
     .banner .btn .arrowes img {
         width: 15px;
+        top: 12px;
+        right: 10px;
     }
 
     .california-div {
