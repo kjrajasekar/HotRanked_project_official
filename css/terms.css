@@ -1,0 +1,71 @@
+.card .terms-para::before {
+    content: "";
+    display: inline-block;
+    background-color: #087FED;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.terms-effect {
+    bottom: 0;
+    right: 0;
+    width: 160px;
+}
+
+/* ============ desktop view ============ */
+
+@media(max-width: 1200px) {
+    
+}
+
+@media(max-width: 992px) {
+
+}
+
+/* ============ Tab view ============ */
+@media screen and (max-width: 769px) {
+    
+
+
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+
+/* ============ Mobile  view ============ */
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 475px) {
+    .terms h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    
+    
+}
+
+@media screen and (max-width: 360px) {
+    
+}
+@media screen and (max-width: 321px) {
+
+    .terms h3 {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 25px;
+        color: #011E4F;
+    }
+
+}
+
+/* ------------end of Responsive design ---------- */

@@ -249,6 +249,16 @@
     left: 25%;
 }
 
+.profile-content h5:hover{
+    color: #087DEA;
+
+}
+.profile-content h3:hover{
+    color: #003b73;
+}
+.more-btn:hover button {
+    background-color: #002ea6 !important;
+}
 .right-bg {
     right: 0;
 }

@@ -1,0 +1,307 @@
+.cities-text {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 55px;
+    color: #077DEA;
+    text-align: left;
+    padding: 0px;
+}
+
+.cities-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 16px;
+}
+
+.city-s13-effect {
+    top: 23%;
+    left: 27%;
+}
+
+.banner-category-effect, .city-effect-1 {
+    width: 100%;
+    opacity: 0.2;
+}
+
+.city-s13-effect {
+    opacity: 0.2;
+
+}
+
+.city-effect-1 {
+    width: 100%;
+}
+
+.city-s13-icon {
+    width: 100%;
+}
+
+.contact-us-div {
+    margin: 40px auto;
+}
+
+.contact-us-div h2 {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.input-style {
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #0E7FE973;
+    background-color: #F8FBFD;
+    font-weight: 500;
+    font-size: 15px;
+    /* padding-left: 10px; */
+}
+
+.select-style {
+    padding-left: 20px;
+}
+
+.input-style::placeholder {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0px;
+    padding-left: 10px;
+}
+
+.tell-us-style {
+    height: 200px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0px;
+
+}
+
+.tell-us-style::placeholder {
+    width: 296px;
+    height: 23px;
+    padding-top: 24px;
+    /* padding-left: 10px; */
+}
+
+.contact-info .address-div {
+    margin-bottom: 0px;
+}
+
+.submit-btn-style {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    width: 300px;
+    height: 81px;
+    border-radius: 5px;
+    background-color: #087FED;
+    color: #ffffff;
+    border: none;
+}
+
+.contact-icon {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-right: 1px solid #0E7FE973;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.contact-icon img {
+    padding: 35px 37.5px;
+}
+
+.contact-info .contact-details-div {
+    border: 1px solid #0E7FE973;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.address-style {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 18px 0px 0px 20px;
+}
+
+.address-div {
+    padding: 37.4px 22px;
+    background-color: #ffffff;
+}
+
+.address-div p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #077DEA;
+    margin: 0px 0px 0px 20px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info .contact-icon {
+    background: #f1f7ff;
+}
+
+.contact-info div {
+    padding: 0px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-select:focus {
+    box-shadow: none;
+}
+
+@media(max-width: 1200px) {
+    /* banner style */
+    .city-s13-effect {
+        top: 21%;
+        left: 36%;
+    }
+    
+    /* contact us */
+    .address-style {
+        font-size: 16px;
+    }
+
+    .address-div p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 992px) {
+    
+}
+
+/* ============ Tab view ============ */
+@media screen and (max-width: 769px) {
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .city-s13-effect {
+        left: 30%;
+    }
+}
+
+/* ============ Mobile  view ============ */
+@media screen and (max-width: 475px) {
+    /* banner */
+    .cities-description {
+        margin-top: 0px;
+    }
+
+    .cities-text {
+        font-size: 46px;
+    }
+
+    .cities-description {
+        font-size: 16px;
+    }
+
+    /* contact form */
+    .contact-us-div h2 {
+        font-size: 22px;
+    }
+
+    .phone-style {
+        margin-top: 20px;
+    }
+
+    .submit-btn-style {
+        width: 400px;
+    }
+
+    .address-div p {
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 381px) {
+    
+
+    .submit-btn-style {
+        width: 230px;
+    }
+
+    .contact-icon {
+        
+        width: 70px;
+        height: 70px;
+       
+    }
+
+    .contact-icon img {
+        padding: 20px 19.5px;
+    }
+
+    .submit-btn-style {
+        
+        width: 355px;
+    }
+
+    .address-div p {
+        font-size: 12px;
+        padding-right: 5px;
+    }
+
+    .address-style {
+        margin: 8px 0px 0px 20px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+}
+
+@media screen and (max-width: 321px) {
+    .submit-btn-style {
+        width: 296px;
+    }
+
+    .contact-form {
+        width: 290px;
+    }
+
+    .contact-icon img {
+        padding: 20px 22.5px;
+    }
+}
+
+/* ------------end of Responsive design ---------- */
